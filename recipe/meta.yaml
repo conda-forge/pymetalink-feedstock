@@ -1,5 +1,5 @@
 {% set name = "pymetalink" %}
-{% set version = "6.2" %}
+{% set version = "6.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2c930aaa660b60872118f41784e479264985f3f7b1c66843205a68fa377091f5
+  sha256: e9d172a5b951ce418ceca61259c8c6a370be8798c27df02ba7dd20ae8a76c9be
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'pyMetalink is a library for python to support advanced download features'
+  summary: pyMetalink is a library for python to support advanced download features
   dev_url: https://github.com/metalink-dev/pymetalink
 
 extra:
