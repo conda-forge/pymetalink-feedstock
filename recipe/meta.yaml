@@ -1,13 +1,13 @@
 {% set name = "pymetalink" %}
-{% set version = "6.5.2" %}
+{% set version = "6.5.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9e9090b9a889825abf33ccc5239c1a1cc0bca4c55ff57025b7bbf5555c334d79
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a9dbc33279b295c473aec1193403d34af2dc6a5e085a27f62216672965e10cf2
 
 build:
   noarch: python
