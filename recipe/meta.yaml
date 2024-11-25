@@ -1,5 +1,6 @@
 {% set name = "pymetalink" %}
 {% set version = "6.5.3" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
